@@ -10,7 +10,7 @@ body {
  
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    color: #2a5d84;
+    color: #177970;
   }
   
  
@@ -18,7 +18,7 @@ body {
     text-align: justify;
     padding: 10px;
     background-color: #e3ecf6;
-    border-left: 4px solid #2a5d84;
+    border-left: 4px solid  #177970;
     margin-bottom: 20px;
   }
   
@@ -42,7 +42,7 @@ body {
  
   a {
     text-decoration: none;
-    color: #0066cc;
+    color: #177970;
     font-weight: bold;
   }
   
@@ -55,7 +55,7 @@ body {
 
   #welcome {
     font-size: 28px;
-    color: #1a3e5c;
+    color:  #177970;
   }
   
   .highlight {
