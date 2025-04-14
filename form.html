@@ -9,51 +9,70 @@
     <h1>User Registration Form</h1>
 
     <form>
+
+      
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+        </fieldset>
+
+      
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+      
+            
+        </fieldset>
+
        
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <fieldset>
+            <legend>Interests</legend>
 
-    
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <input type="checkbox" id="coding" name="interests[]" value="Coding">
+            <label for="coding">Coding</label><br>
 
-    
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
+            <input type="checkbox" id="reading" name="interests[]" value="Reading">
+            <label for="reading">Reading</label><br>
 
-    
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="Other">
-    
+            <input type="checkbox" id="sports" name="interests[]" value="Sports">
+            <label for="sports">Sports</label><br>
 
-     
-        <label>Interests:</label><br>
-        <input type="checkbox" id="coding" name="interests[]" value="Coding">
-        <label for="coding">Coding</label><br>
-        <input type="checkbox" id="reading" name="interests[]" value="Reading">
-        <label for="reading">Reading</label><br>
-        <input type="checkbox" id="sports" name="interests[]" value="Sports">
-        <label for="sports">Sports</label><br>
-        <input type="checkbox" id="music" name="interests[]" value="Music">
-        <label for="music">Music</label><br><br>
+            <input type="checkbox" id="music" name="interests[]" value="Music">
+            <label for="music">Music</label><br>
+        </fieldset>
 
-   
-        <label for="country">Country:</label><br>
-        <select id="country" name="country">
-            <option value="">--Select Country--</option>
-            <option value="Tanzania">Tanzania</option>
-            <option value="Kenya">Kenya</option>
-            <option value="Uganda">Uganda</option>
-            <option value="Rwanda">Rwanda</option>
-           
-        </select><br><br>
 
-    
-        <button type="submit">Register</button>
+        <fieldset>
+            <legend>Country</legend>
+
+            <label for="country">Select your country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Rwanda">Rwanda</option>
+            
+            </select><br><br>
+        </fieldset>
+
+      
+        <button type="submit">Submit</button>
+
     </form>
 
 </body>
